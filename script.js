@@ -28,7 +28,23 @@
     });
 
     navLinks.querySelectorAll('a').forEach(function (link) {
-      link.addEventListener('click', function () {
+      link.addEventListener('click', function (event) {
+        const href = link.getAttribute('href');
+
+        if (href && href.startsWith('#')) {
+          const target = document.querySelector(href);
+          if (target) {
+            event.preventDefault();
+            const offset = (header ? header.offsetHeight : 0) + 24;
+            const targetPosition = target.getBoundingClientRect().top + window.scrollY - offset;
+
+            window.scrollTo({
+              top: targetPosition,
+              behavior: 'smooth'
+            });
+          }
+        }
+
         navLinks.classList.remove('open');
         navToggle.classList.remove('open');
         navToggle.setAttribute('aria-expanded', 'false');
