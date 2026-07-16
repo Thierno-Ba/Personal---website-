@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Thierno Barry favicon">
+  <circle cx="32" cy="32" r="28" fill="#facc15"/>
+  <circle cx="32" cy="32" r="28" fill="none" stroke="#1f2937" stroke-width="2"/>
+  <path d="M21 18.5h11.2a7.3 7.3 0 0 1 0 14.6H21z" fill="none" stroke="#1f2937" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M21 18.5v27" stroke="#1f2937" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M32.2 33.1h6.8a5.3 5.3 0 0 1 0 10.6h-6.8z" fill="none" stroke="#1f2937" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="32" y="41" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#111827">B</text>
+</svg>
