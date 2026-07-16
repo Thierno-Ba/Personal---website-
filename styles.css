@@ -928,23 +928,19 @@ strong {
   align-items: center;
   gap: 1rem;
   width: 100%;
-  padding: 1.25rem 1.5rem;
-  background: var(--color-white);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
   color: var(--color-text);
   text-decoration: none;
-  box-shadow: var(--shadow-sm);
-  transition:
-    transform var(--transition),
-    box-shadow var(--transition),
-    border-color var(--transition),
-    background-color var(--transition);
+  box-shadow: none;
+  transition: color var(--transition);
 }
 
 .social-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-md);
+  transform: none;
+  box-shadow: none;
   color: var(--color-text);
 }
 
@@ -958,10 +954,12 @@ strong {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  width: 48px;
-  height: 48px;
-  border-radius: var(--radius-sm);
-  transition: background-color var(--transition), color var(--transition);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--color-accent);
+  transition: color var(--transition), transform var(--transition);
 }
 
 .social-btn-icon svg {
@@ -989,17 +987,12 @@ strong {
 }
 
 .social-btn-linkedin .social-btn-icon {
-  background: #e8f4fc;
   color: #0a66c2;
 }
 
-.social-btn-linkedin:hover {
-  border-color: #0a66c2;
-}
-
 .social-btn-linkedin:hover .social-btn-icon {
-  background: #0a66c2;
-  color: var(--color-white);
+  color: #004182;
+  transform: scale(1.05);
 }
 
 .social-btn-linkedin:hover .social-btn-handle {
@@ -1007,21 +1000,16 @@ strong {
 }
 
 .social-btn-x .social-btn-icon {
-  background: var(--color-bg-muted);
   color: var(--color-text);
-}
-
-.social-btn-x:hover {
-  border-color: var(--color-text);
 }
 
 .social-btn-x:hover .social-btn-icon {
-  background: var(--color-text);
-  color: var(--color-white);
+  color: var(--color-accent);
+  transform: scale(1.05);
 }
 
 .social-btn-x:hover .social-btn-handle {
-  color: var(--color-text);
+  color: var(--color-accent);
 }
 
 /* ========================================
