@@ -14,19 +14,25 @@
 <body>
   <header class="site-header" id="top">
     <nav class="nav container" aria-label="Main navigation">
-      <a href="#hero" class="nav-logo">Thierno Barry</a>
-      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <a href="#hero" class="nav-logo" data-i18n-key="navLogo">Thierno Barry</a>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#project">Project</a></li>
-        <li><a href="#journey">Journey</a></li>
-        <li><a href="#contact" class="nav-cta">Connect</a></li>
+        <li><a href="#about" data-i18n-key="navAbout">About</a></li>
+        <li><a href="#skills" data-i18n-key="navSkills">Skills</a></li>
+        <li><a href="#project" data-i18n-key="navProject">Project</a></li>
+        <li><a href="#journey" data-i18n-key="navJourney">Journey</a></li>
+        <li><a href="#contact" class="nav-cta" data-i18n-key="navConnect">Connect</a></li>
       </ul>
+      <div class="nav-actions">
+        <div class="lang-switcher" role="group" aria-label="Language switcher">
+          <button class="lang-btn active" type="button" data-lang="en" data-i18n-key="langEnglish">English</button>
+          <button class="lang-btn" type="button" data-lang="fr" data-i18n-key="langFrench">Français</button>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" data-i18n-key="navToggleLabel" data-i18n-attr="aria-label">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </nav>
   </header>
 
@@ -42,21 +48,23 @@
             class="profile-photo"
             width="300"
             height="300"
+            data-i18n-key="heroImageAlt"
+            data-i18n-attr="alt"
           >
         </div>
         <div class="hero-inner">
-          <p class="hero-greeting">Hello, I'm</p>
+          <p class="hero-greeting" data-i18n-key="heroGreeting">Hello, I'm</p>
           <h1 class="hero-name">Thierno Barry</h1>
-          <p class="hero-headline">Aspiring AI Professional Building Responsible Solutions for Real-World Challenges</p>
-          <p class="hero-mission">
+          <p class="hero-headline" data-i18n-key="heroHeadline">Aspiring AI Professional Building Responsible Solutions for Real-World Challenges</p>
+          <p class="hero-mission" data-i18n-key="heroMission">
             I am a Political Science and Finance graduate developing AI skills through the Pursuit AI Native
             program. I combine analytical thinking, technology, and problem-solving to create AI-powered
             solutions that improve decision-making, support industries, and create meaningful impact,
             including exploring how AI can contribute to Guinea's mining sector.
           </p>
           <div class="hero-actions">
-            <a href="#project" class="btn btn-primary">View My Projects</a>
-            <a href="#contact" class="btn btn-secondary">Connect With Me</a>
+            <a href="#project" class="btn btn-primary" data-i18n-key="heroProjectBtn">View My Projects</a>
+            <a href="#contact" class="btn btn-secondary" data-i18n-key="heroContactBtn">Connect With Me</a>
           </div>
         </div>
       </div>
@@ -67,9 +75,9 @@
     <section class="section skills" id="skills">
       <div class="container">
         <div class="section-header">
-          <span class="section-label">Skills & Strengths</span>
-          <h2>What I Bring to the Table</h2>
-          <p class="section-subtitle">
+          <span class="section-label" data-i18n-key="skillsLabel">Skills & Strengths</span>
+          <h2 data-i18n-key="skillsTitle">What I Bring to the Table</h2>
+          <p class="section-subtitle" data-i18n-key="skillsSubtitle">
             A blend of analytical rigor, business understanding, and growing technical capability —
             with a focus on connecting problems to practical solutions.
           </p>
@@ -79,50 +87,50 @@
             <div class="skill-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
             </div>
-            <h3>AI Problem-Solving</h3>
-            <p>Breaking down complex challenges and exploring how AI tools can address them thoughtfully and effectively.</p>
+            <h3 data-i18n-key="skillAiTitle">AI Problem-Solving</h3>
+            <p data-i18n-key="skillAiText">Breaking down complex challenges and exploring how AI tools can address them thoughtfully and effectively.</p>
           </article>
           <article class="skill-card">
             <div class="skill-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
             </div>
-            <h3>Prompt Engineering</h3>
-            <p>Crafting clear, structured prompts to get reliable outputs from AI systems for research, analysis, and prototyping.</p>
+            <h3 data-i18n-key="skillPromptTitle">Prompt Engineering</h3>
+            <p data-i18n-key="skillPromptText">Crafting clear, structured prompts to get reliable outputs from AI systems for research, analysis, and prototyping.</p>
           </article>
           <article class="skill-card">
             <div class="skill-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/></svg>
             </div>
-            <h3>Product Thinking</h3>
-            <p>Defining user needs, scoping features, and designing solutions that deliver real value — not just technical demos.</p>
+            <h3 data-i18n-key="skillProductTitle">Product Thinking</h3>
+            <p data-i18n-key="skillProductText">Defining user needs, scoping features, and designing solutions that deliver real value — not just technical demos.</p>
           </article>
           <article class="skill-card">
             <div class="skill-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
             </div>
-            <h3>Research & Analysis</h3>
-            <p>Investigating problems deeply, synthesizing information, and presenting findings with clarity and structure.</p>
+            <h3 data-i18n-key="skillResearchTitle">Research & Analysis</h3>
+            <p data-i18n-key="skillResearchText">Investigating problems deeply, synthesizing information, and presenting findings with clarity and structure.</p>
           </article>
           <article class="skill-card">
             <div class="skill-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
             </div>
-            <h3>Technology Adoption</h3>
-            <p>Learning new tools quickly, experimenting with emerging platforms, and integrating them into practical workflows.</p>
+            <h3 data-i18n-key="skillTechTitle">Technology Adoption</h3>
+            <p data-i18n-key="skillTechText">Learning new tools quickly, experimenting with emerging platforms, and integrating them into practical workflows.</p>
           </article>
           <article class="skill-card">
             <div class="skill-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
             </div>
-            <h3>Communication & Collaboration</h3>
-            <p>Translating technical concepts for diverse audiences and working effectively across teams and stakeholders.</p>
+            <h3 data-i18n-key="skillCommunicationTitle">Communication & Collaboration</h3>
+            <p data-i18n-key="skillCommunicationText">Translating technical concepts for diverse audiences and working effectively across teams and stakeholders.</p>
           </article>
           <article class="skill-card skill-card-wide">
             <div class="skill-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
             </div>
-            <h3>Business ↔ Technology Bridge</h3>
-            <p>Connecting organizational challenges with technology solutions — understanding what teams need before proposing what tools can do.</p>
+            <h3 data-i18n-key="skillBridgeTitle">Business ↔ Technology Bridge</h3>
+            <p data-i18n-key="skillBridgeText">Connecting organizational challenges with technology solutions — understanding what teams need before proposing what tools can do.</p>
           </article>
         </div>
       </div>
@@ -132,25 +140,25 @@
     <section class="section about" id="about">
       <div class="container">
         <div class="section-header">
-          <span class="section-label">About Me</span>
-          <h2>From Policy & Finance to AI & Impact</h2>
+          <span class="section-label" data-i18n-key="aboutLabel">About Me</span>
+          <h2 data-i18n-key="aboutTitle">From Policy & Finance to AI & Impact</h2>
         </div>
         <div class="about-grid">
           <div class="about-content">
-            <p>
+            <p data-i18n-key="aboutP1">
               My journey began in Political Science and Finance — fields that taught me how to
               analyze complex systems, evaluate trade-offs, and understand how decisions ripple
               through organizations, economies, and communities. That foundation shaped how I
               think: always looking at problems from multiple angles before reaching for a solution.
             </p>
-            <p>
+            <p data-i18n-key="aboutP2">
               Today, I'm actively building AI skills through the <strong>Pursuit AI Native</strong>
               program, where I learn to design AI-powered solutions, work with modern development
               tools, and apply technology to challenges that matter. I'm not claiming years of
               industry experience — I'm claiming curiosity, discipline, and a track record of
               turning learning into action through real projects.
             </p>
-            <p>
+            <p data-i18n-key="aboutP3">
               What drives me is purpose. I want to use AI responsibly to improve industries and
               communities — especially in Guinea, where the mining sector holds enormous potential
               for economic growth and sustainable development. I believe technology should make
@@ -160,18 +168,18 @@
           <aside class="about-highlights">
             <div class="highlight-card">
               <span class="highlight-icon" aria-hidden="true">🎓</span>
-              <h3>Education</h3>
-              <p>Political Science & Finance — analytical thinking, systems analysis, and business fundamentals</p>
+              <h3 data-i18n-key="highlightEducationTitle">Education</h3>
+              <p data-i18n-key="highlightEducationText">Political Science & Finance — analytical thinking, systems analysis, and business fundamentals</p>
             </div>
             <div class="highlight-card">
               <span class="highlight-icon" aria-hidden="true">🤖</span>
-              <h3>Current Focus</h3>
-              <p>AI development, prompt engineering, and building practical solutions through Pursuit AI Native</p>
+              <h3 data-i18n-key="highlightFocusTitle">Current Focus</h3>
+              <p data-i18n-key="highlightFocusText">AI development, prompt engineering, and building practical solutions through Pursuit AI Native</p>
             </div>
             <div class="highlight-card">
               <span class="highlight-icon" aria-hidden="true">🌍</span>
-              <h3>Mission</h3>
-              <p>Applying AI to Guinea's mining sector and sustainable development with transparency and impact</p>
+              <h3 data-i18n-key="highlightMissionTitle">Mission</h3>
+              <p data-i18n-key="highlightMissionText">Applying AI to Guinea's mining sector and sustainable development with transparency and impact</p>
             </div>
           </aside>
         </div>
@@ -182,9 +190,9 @@
     <section class="section project" id="project">
       <div class="container">
         <div class="section-header">
-          <span class="section-label">Featured Project</span>
-          <h2>AI Mining Solutions for Guinea</h2>
-          <p class="section-subtitle">
+          <span class="section-label" data-i18n-key="projectLabel">Featured Project</span>
+          <h2 data-i18n-key="projectTitle">AI Mining Solutions for Guinea</h2>
+          <p class="section-subtitle" data-i18n-key="projectSubtitle">
             A concept platform exploring how AI can improve transparency, decision-making,
             and sustainable practices in one of West Africa's most resource-rich sectors.
           </p>
@@ -196,24 +204,24 @@
                 <span class="mockup-dot"></span>
                 <span class="mockup-dot"></span>
                 <span class="mockup-dot"></span>
-                <span class="mockup-title">Mining Intelligence Platform</span>
+                <span class="mockup-title" data-i18n-key="projectMockupTitle">Mining Intelligence Platform</span>
               </div>
               <div class="mockup-body">
                 <div class="mockup-sidebar">
-                  <div class="mockup-nav-item active">Dashboard</div>
-                  <div class="mockup-nav-item">Documents</div>
-                  <div class="mockup-nav-item">Regulations</div>
-                  <div class="mockup-nav-item">AI Assistant</div>
+                  <div class="mockup-nav-item active" data-i18n-key="projectNavDashboard">Dashboard</div>
+                  <div class="mockup-nav-item" data-i18n-key="projectNavDocuments">Documents</div>
+                  <div class="mockup-nav-item" data-i18n-key="projectNavRegulations">Regulations</div>
+                  <div class="mockup-nav-item" data-i18n-key="projectNavAssistant">AI Assistant</div>
                 </div>
                 <div class="mockup-main">
                   <div class="mockup-stat-row">
-                    <div class="mockup-stat"><span>847</span> Documents Indexed</div>
-                    <div class="mockup-stat"><span>23</span> Active Projects</div>
-                    <div class="mockup-stat"><span>12</span> Regulations Summarized</div>
+                    <div class="mockup-stat"><span>847</span> <span data-i18n-key="projectStatDocs">Documents Indexed</span></div>
+                    <div class="mockup-stat"><span>23</span> <span data-i18n-key="projectStatProjects">Active Projects</span></div>
+                    <div class="mockup-stat"><span>12</span> <span data-i18n-key="projectStatRegs">Regulations Summarized</span></div>
                   </div>
                   <div class="mockup-chat">
-                    <p class="mockup-chat-q">What are the latest environmental compliance requirements for bauxite mining?</p>
-                    <p class="mockup-chat-a">Based on current regulations, operators must submit quarterly environmental impact reports and maintain water quality monitoring at all extraction sites...</p>
+                    <p class="mockup-chat-q" data-i18n-key="projectChatQuestion">What are the latest environmental compliance requirements for bauxite mining?</p>
+                    <p class="mockup-chat-a" data-i18n-key="projectChatAnswer">Based on current regulations, operators must submit quarterly environmental impact reports and maintain water quality monitoring at all extraction sites...</p>
                   </div>
                 </div>
               </div>
@@ -221,8 +229,8 @@
           </div>
           <div class="project-details">
             <div class="project-block">
-              <h3>The Problem</h3>
-              <p>
+              <h3 data-i18n-key="projectProblemTitle">The Problem</h3>
+              <p data-i18n-key="projectProblemText">
                 Guinea's mining sector faces significant challenges: scattered and hard-to-access
                 information, complex regulatory documents, limited transparency between companies
                 and government agencies, and decision-making slowed by data that lives in silos.
@@ -231,25 +239,25 @@
               </p>
             </div>
             <div class="project-block">
-              <h3>The Solution</h3>
-              <p>
+              <h3 data-i18n-key="projectSolutionTitle">The Solution</h3>
+              <p data-i18n-key="projectSolutionText">
                 An AI-powered platform concept designed to help mining companies, government
                 agencies, and community stakeholders organize information, analyze data, summarize
                 regulations, and support more informed, transparent decisions across the sector.
               </p>
             </div>
             <div class="project-block">
-              <h3>Key Features</h3>
+              <h3 data-i18n-key="projectFeaturesTitle">Key Features</h3>
               <ul class="feature-list">
-                <li><strong>AI Mining Information Assistant</strong> — Ask questions in plain language and get answers grounded in sector documents and regulations</li>
-                <li><strong>Document Analysis & Summarization</strong> — Upload reports, contracts, and policy documents for AI-powered summaries and key insights</li>
-                <li><strong>Data Organization & Insights Dashboard</strong> — Centralize project data, track compliance metrics, and surface trends at a glance</li>
-                <li><strong>Sustainable & Transparent Practices</strong> — Support environmental reporting, stakeholder communication, and accountability workflows</li>
+                <li><strong data-i18n-key="projectFeature1Title">AI Mining Information Assistant</strong> <span data-i18n-key="projectFeature1Text">— Ask questions in plain language and get answers grounded in sector documents and regulations</span></li>
+                <li><strong data-i18n-key="projectFeature2Title">Document Analysis & Summarization</strong> <span data-i18n-key="projectFeature2Text">— Upload reports, contracts, and policy documents for AI-powered summaries and key insights</span></li>
+                <li><strong data-i18n-key="projectFeature3Title">Data Organization & Insights Dashboard</strong> <span data-i18n-key="projectFeature3Text">— Centralize project data, track compliance metrics, and surface trends at a glance</span></li>
+                <li><strong data-i18n-key="projectFeature4Title">Sustainable & Transparent Practices</strong> <span data-i18n-key="projectFeature4Text">— Support environmental reporting, stakeholder communication, and accountability workflows</span></li>
               </ul>
             </div>
             <div class="project-block project-role">
-              <h3>My Role</h3>
-              <p>
+              <h3 data-i18n-key="projectRoleTitle">My Role</h3>
+              <p data-i18n-key="projectRoleText">
                 I researched the sector's information challenges, designed the platform concept,
                 applied prompt engineering to prototype the AI assistant experience, and explored
                 how technology can create measurable value for mining organizations and the
@@ -266,9 +274,9 @@
     <section class="section journey" id="journey">
       <div class="container">
         <div class="section-header">
-          <span class="section-label">Learning Journey</span>
-          <h2>Growing Through Pursuit AI Native</h2>
-          <p class="section-subtitle">
+          <span class="section-label" data-i18n-key="journeyLabel">Learning Journey</span>
+          <h2 data-i18n-key="journeyTitle">Growing Through Pursuit AI Native</h2>
+          <p class="section-subtitle" data-i18n-key="journeySubtitle">
             An intensive, hands-on program where I am actively building the skills to design
             and deliver AI solutions — learning by doing, iterating, and improving.
           </p>
@@ -277,8 +285,8 @@
           <article class="journey-item">
             <div class="journey-marker"></div>
             <div class="journey-content">
-              <h3>AI Concepts & Responsible Practices</h3>
-              <p>
+              <h3 data-i18n-key="journeyStep1Title">AI Concepts & Responsible Practices</h3>
+              <p data-i18n-key="journeyStep1Text">
                 Learning foundational AI concepts — from how large language models work to the
                 principles of responsible AI. Understanding bias, transparency, and the importance
                 of building technology that serves people, not the other way around.
@@ -288,8 +296,8 @@
           <article class="journey-item">
             <div class="journey-marker"></div>
             <div class="journey-content">
-              <h3>Building Through Experimentation</h3>
-              <p>
+              <h3 data-i18n-key="journeyStep2Title">Building Through Experimentation</h3>
+              <p data-i18n-key="journeyStep2Text">
                 Creating real projects through iterative development — testing ideas, refining
                 approaches, and learning from what works and what doesn't. Each project strengthens
                 my ability to move from concept to working prototype.
@@ -299,8 +307,8 @@
           <article class="journey-item">
             <div class="journey-marker"></div>
             <div class="journey-content">
-              <h3>Tools, Environments & Problem-Solving</h3>
-              <p>
+              <h3 data-i18n-key="journeyStep3Title">Tools, Environments & Problem-Solving</h3>
+              <p data-i18n-key="journeyStep3Text">
                 Developing confidence with AI development tools, coding environments, and
                 structured problem-solving methods. I'm building the technical fluency to
                 collaborate effectively with engineering teams while contributing meaningfully
@@ -310,7 +318,7 @@
           </article>
         </div>
         <div class="journey-cta">
-          <p>
+          <p data-i18n-key="journeyCtaText">
             I'm early in my AI career — and that's intentional. I'm investing deeply in learning
             now so I can contribute with both skill and perspective as the field evolves.
           </p>
@@ -324,10 +332,10 @@
         <div class="contact-grid">
           <div class="contact-info">
             <div class="section-header">
-              <span class="section-label">Get In Touch</span>
-              <h2>Let's Connect</h2>
+              <span class="section-label" data-i18n-key="contactLabel">Get In Touch</span>
+              <h2 data-i18n-key="contactTitle">Let's Connect</h2>
             </div>
-            <p>
+            <p data-i18n-key="contactIntro">
               I'm open to conversations with recruiters, hiring managers, mining companies,
               government organizations, and technology programs. Whether you're exploring a
               collaboration, an internship, or a role where analytical thinking meets AI —
@@ -336,37 +344,37 @@
             <ul class="contact-points">
               <li>
                 <span class="contact-point-icon" aria-hidden="true">✦</span>
-                Open to opportunities in AI, technology, and sustainable development
+                <span data-i18n-key="contactPoint1">Open to opportunities in AI, technology, and sustainable development</span>
               </li>
               <li>
                 <span class="contact-point-icon" aria-hidden="true">✦</span>
-                Interested in roles across mining, government, and tech sectors
+                <span data-i18n-key="contactPoint2">Interested in roles across mining, government, and tech sectors</span>
               </li>
               <li>
                 <span class="contact-point-icon" aria-hidden="true">✦</span>
-                Based in the United States, with strong ties to Guinea
+                <span data-i18n-key="contactPoint3">Based in the United States, with strong ties to Guinea</span>
               </li>
             </ul>
           </div>
           <form class="contact-form" id="contact-form" novalidate>
             <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your name">
+              <label for="name" data-i18n-key="formNameLabel">Name</label>
+              <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your name" data-i18n-key="formNamePlaceholder" data-i18n-attr="placeholder">
             </div>
             <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@company.com">
+              <label for="email" data-i18n-key="formEmailLabel">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@company.com" data-i18n-key="formEmailPlaceholder" data-i18n-attr="placeholder">
             </div>
             <div class="form-group">
-              <label for="organization">Organization <span class="optional">(optional)</span></label>
-              <input type="text" id="organization" name="organization" autocomplete="organization" placeholder="Company or organization">
+              <label for="organization"><span data-i18n-key="formOrganizationLabel">Organization</span> <span class="optional" data-i18n-key="formOptional">(optional)</span></label>
+              <input type="text" id="organization" name="organization" autocomplete="organization" placeholder="Company or organization" data-i18n-key="formOrganizationPlaceholder" data-i18n-attr="placeholder">
             </div>
             <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="5" required placeholder="Tell me about the opportunity or how you'd like to connect"></textarea>
+              <label for="message" data-i18n-key="formMessageLabel">Message</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Tell me about the opportunity or how you'd like to connect" data-i18n-key="formMessagePlaceholder" data-i18n-attr="placeholder"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
-            <p class="form-success" id="form-success" hidden>
+            <button type="submit" class="btn btn-primary btn-full" data-i18n-key="formSubmitBtn">Send Message</button>
+            <p class="form-success" id="form-success" hidden data-i18n-key="formSuccessText">
               Thank you for reaching out! I'll get back to you as soon as possible.
             </p>
           </form>
@@ -378,9 +386,9 @@
     <section class="section social-connect" id="social-connect" aria-labelledby="social-connect-heading">
       <div class="container social-connect-inner">
         <div class="section-header social-connect-header">
-          <span class="section-label">Connect With Me</span>
-          <h2 id="social-connect-heading">Follow My Journey</h2>
-          <p class="section-subtitle social-connect-subtitle">
+          <span class="section-label" data-i18n-key="socialLabel">Connect With Me</span>
+          <h2 id="social-connect-heading" data-i18n-key="socialTitle">Follow My Journey</h2>
+          <p class="section-subtitle social-connect-subtitle" data-i18n-key="socialSubtitle">
             Connect with me on LinkedIn and X to follow my learning progress, project updates,
             and thoughts on AI, technology, and responsible innovation.
           </p>
@@ -395,6 +403,8 @@
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Connect with Thierno Barry on LinkedIn (opens in new tab)"
+              data-i18n-key="socialLinkedInAria"
+              data-i18n-attr="aria-label"
             >
               <span class="social-btn-icon" aria-hidden="true">
                 <!-- LinkedIn icon -->
@@ -403,8 +413,8 @@
                 </svg>
               </span>
               <span class="social-btn-text">
-                <span class="social-btn-label">LinkedIn</span>
-                <span class="social-btn-handle">Professional profile</span>
+                <span class="social-btn-label" data-i18n-key="socialLinkedInLabel">LinkedIn</span>
+                <span class="social-btn-handle" data-i18n-key="socialLinkedInHandle">Professional profile</span>
               </span>
             </a>
           </li>
@@ -415,6 +425,8 @@
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Follow Thierno Barry on X (opens in new tab)"
+              data-i18n-key="socialXAria"
+              data-i18n-attr="aria-label"
             >
               <span class="social-btn-icon" aria-hidden="true">
                 <!-- X (Twitter) icon -->
@@ -423,8 +435,8 @@
                 </svg>
               </span>
               <span class="social-btn-text">
-                <span class="social-btn-label">X (Twitter)</span>
-                <span class="social-btn-handle">@Thierno64532240</span>
+                <span class="social-btn-label" data-i18n-key="socialXLabel">X (Twitter)</span>
+                <span class="social-btn-handle" data-i18n-key="socialXHandle">@Thierno64532240</span>
               </span>
             </a>
           </li>
@@ -435,8 +447,8 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>&copy; 2026 Thierno Barry. Built with purpose.</p>
-      <a href="#top" class="back-to-top">Back to top ↑</a>
+      <p data-i18n-key="footerText">&copy; 2026 Thierno Barry. Built with purpose.</p>
+      <a href="#top" class="back-to-top" data-i18n-key="footerBackToTop">Back to top ↑</a>
     </div>
   </footer>
 
